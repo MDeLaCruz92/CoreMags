@@ -52,6 +52,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		82550FDA1F41FECE003EE654 /* Parsing */ = {
+			isa = PBXGroup;
+			children = (
+				825E2B0C1F40C5FD002C043D /* MarkupParser.swift */,
+			);
+			path = Parsing;
+			sourceTree = "<group>";
+		};
 		825E2AE11F408A19002C043D = {
 			isa = PBXGroup;
 			children = (
@@ -72,16 +80,11 @@
 		825E2AEC1F408A19002C043D /* CoreMags */ = {
 			isa = PBXGroup;
 			children = (
-				825E2AED1F408A19002C043D /* AppDelegate.swift */,
-				825E2AEF1F408A19002C043D /* MagsViewController.swift */,
-				825E2B0C1F40C5FD002C043D /* MarkupParser.swift */,
-				825E2AF11F408A19002C043D /* Main.storyboard */,
-				825E2AF41F408A19002C043D /* Assets.xcassets */,
-				825E2AF61F408A19002C043D /* LaunchScreen.storyboard */,
-				825E2AF91F408A19002C043D /* Info.plist */,
-				825E2B011F409410002C043D /* MagsView.swift */,
-				825E2B0E1F41251A002C043D /* MagsColumnView.swift */,
-				825E2B101F4144AF002C043D /* MagsSettings.swift */,
+				82550FDA1F41FECE003EE654 /* Parsing */,
+				825E2B141F41FAF8002C043D /* Models */,
+				825E2B131F41FAF6002C043D /* Views */,
+				825E2B121F41FAF2002C043D /* Controllers */,
+				825E2B151F41FB03002C043D /* Supporting Files */,
 				825E2B031F40C5C9002C043D /* zombieMagMaterials */,
 			);
 			path = CoreMags;
@@ -105,6 +108,51 @@
 			);
 			name = zombieMagMaterials;
 			path = ../../../Downloads/zombieMagMaterials;
+			sourceTree = "<group>";
+		};
+		825E2B121F41FAF2002C043D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				825E2AEF1F408A19002C043D /* MagsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		825E2B131F41FAF6002C043D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				825E2B161F41FB12002C043D /* Storyboards */,
+				825E2B011F409410002C043D /* MagsView.swift */,
+				825E2B0E1F41251A002C043D /* MagsColumnView.swift */,
+				825E2B101F4144AF002C043D /* MagsSettings.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		825E2B141F41FAF8002C043D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		825E2B151F41FB03002C043D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				825E2AF41F408A19002C043D /* Assets.xcassets */,
+				825E2AF91F408A19002C043D /* Info.plist */,
+				825E2AED1F408A19002C043D /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		825E2B161F41FB12002C043D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				825E2AF11F408A19002C043D /* Main.storyboard */,
+				825E2AF61F408A19002C043D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,7 +369,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UP5S927B5L;
-				INFOPLIST_FILE = CoreMags/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CoreMags/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MichaelD.CoreMags;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -335,7 +383,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UP5S927B5L;
-				INFOPLIST_FILE = CoreMags/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CoreMags/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MichaelD.CoreMags;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -363,6 +411,7 @@
 				825E2AFE1F408A19002C043D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

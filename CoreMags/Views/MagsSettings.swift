@@ -6,7 +6,6 @@
 //  Copyright © 2017 Michael De La Cruz. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 class MagsSettings {
